@@ -75,8 +75,9 @@ function Videos({searchValue = ''}) {
                     <ReactPlayer url={`https://www.youtube.com/watch?v=${item.id.videoId}`} width="100%" height="100%"/>
                 </div>
                 <div className="card__text">
-                    <h1>Title</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <h6>{item.snippet.title}</h6>
+                    <span className="card__text--small">{item.snippet.channelTitle}</span>
+                    <p>{item.snippet.description}</p>
                 </div>
             </div>
         ))}

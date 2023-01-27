@@ -10,6 +10,7 @@ const API = {
             const authAxios = axios.create({
                 baseURL: 'https://www.googleapis.com/youtube/v3/search',
                     params:{
+                        part: "snippet",
                         key: key,
                         type: 'video',
                         q: query,
