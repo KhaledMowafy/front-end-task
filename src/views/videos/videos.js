@@ -50,7 +50,7 @@ function Videos({searchValue = ''}) {
     return (
       <div className="card">
         <div className="card__title">
-            <h5>About {data?.pageInfo.totalResults} Results</h5>
+            <h5>About {data?.pageInfo.totalResults} Filtered Results</h5>
             <h5 className="card__filter" onClick={displayFilters}>&#9776; Filter</h5>
         </div>
         <div id="card__filter--items">
