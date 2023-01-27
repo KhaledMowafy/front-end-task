@@ -1,0 +1,11 @@
+.card__footer{
+    width:100%;
+    
+}
+.card__actions{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    height: 5vh;
+    padding-bottom: 50px;
+}

@@ -1,0 +1,46 @@
+.main-nav{
+    background-color: white;
+    height:10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width:100%;
+}
+.main-nav__item{
+    display: flex;
+    width:60%;
+    margin:0 !important;
+}
+.main-nav__item input{
+   width:80%;
+   height:30px;
+}
+.main-nav__item button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    width: 10%;
+ }
+.main-nav__logo img{
+    max-width:100px;
+}
+
+#mobile__logo{
+    display: none;
+    max-width: 60px;
+}
+@media only screen and (max-width: 992px) {
+    #desktop__logo{
+        display: none!important;
+    }
+    #mobile__logo{
+        display: block !important;
+    }
+    .main-nav{
+        background-color: red !important;
+        position:unset !important;
+    }
+    
+}
